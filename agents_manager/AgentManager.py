@@ -126,8 +126,7 @@ class AgentManager:
                     return self.run_agent(tool_result, user_input)
 
                 elif isinstance(tool, Container) and (
-                    tool.__name__ == function_name
-                    and not tool.name.startswith("handover_")
+                    tool.name == function_name and not tool.name.startswith("handover_")
                 ):
                     tool_result = tool.run(arguments)
 
@@ -218,8 +217,7 @@ class AgentManager:
                     return
 
                 elif isinstance(tool, Container) and (
-                    tool.__name__ == function_name
-                    and not tool.name.startswith("handover_")
+                    tool.name == function_name and not tool.name.startswith("handover_")
                 ):
                     tool_result = tool.run(arguments)
 

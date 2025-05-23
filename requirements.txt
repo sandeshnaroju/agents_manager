@@ -36,6 +36,7 @@ pydantic==2.10.6
 pydantic_core==2.27.2
 Pygments==2.19.1
 pyproject_hooks==1.2.0
+pytest==8.2.2
 python-dotenv==1.0.1
 readme_renderer==44.0
 requests==2.32.3
